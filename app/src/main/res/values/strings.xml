@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EyePdCalculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_picture">Click Picture</string>
+    <string name="app_name_splash">Pupillary Distance Calculator</string>
+
+
+    <string name="slide_one_info">We will take a Picture of your face using the front camera. and then going to measure pupillary Distance </string>
+    <string name="slide_two_info">You should have a standard size card, like credit card, or an ID card.</string>
+    <string name="slide_three_info">Place and hold card exactly on you forehead, above you eyes.</string>
+    <string name="slide_four_info">Hold the Phone at distance of 6 inches or more.</string>
+</resources>

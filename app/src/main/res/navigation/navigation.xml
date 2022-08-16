@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.techlads.eyepdcalculator.SplashFragment"
+        android:label="Splash Fragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingFragment"
+            app:destination="@+id/OnBoardingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/OnBoardingFragment"
+        android:name="com.techlads.eyepdcalculator.OnBoardingSliderFragment"
+        android:label="On Boarding"
+        tools:layout="@layout/fragment_on_boarding_slider">
+
+        <action
+            android:id="@+id/action_onBoardingFragment_to_homeFragment"
+            app:destination="@+id/HomeFragment"
+            app:popUpTo="@id/OnBoardingFragment"
+            app:popUpToInclusive="false"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.techlads.eyepdcalculator.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home" />
+
+    <dialog
+        android:id="@+id/myDialog2"
+        android:name="com.techlads.eyepdcalculator.MyDialog"
+        android:label="MyDialog" >
+        <argument
+            android:name="itemId"
+            app:argType="string"
+            android:defaultValue='""' />
+    </dialog>
+</navigation>
