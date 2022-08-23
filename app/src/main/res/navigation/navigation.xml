@@ -41,7 +41,29 @@
         android:id="@+id/HomeFragment"
         android:name="com.techlads.eyepdcalculator.HomeFragment"
         android:label="Home Fragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_calculateFragment"
+            app:destination="@+id/CalculateFragment"
+            app:popUpTo="@id/HomeFragment"
+            app:popUpToInclusive="false"
+            />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CalculateFragment"
+        android:name="com.techlads.eyepdcalculator.CalculatePdFragment"
+        android:label="Calculate PD"
+        tools:layout="@layout/fragment_calculate_pd">
+
+        <argument
+            android:name="imageUri"
+            app:argType="android.net.Uri" />
+
+    </fragment>
 
     <dialog
         android:id="@+id/myDialog2"

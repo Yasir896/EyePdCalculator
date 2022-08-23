@@ -5,13 +5,13 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.techlads.eyepdcalculator.base.BaseFragment
 import com.techlads.eyepdcalculator.databinding.FragmentHomeBinding
 import java.io.File
@@ -22,7 +22,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     private lateinit var latestTmpUri: Uri
 
-
     override fun getFragmentBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
@@ -31,10 +30,20 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     }
 
     override fun onPostInit() {
-        binding.btOpenCamera.setOnClickListener {
+        binding.btRetake.setOnClickListener {
             if (askForPermissions(Manifest.permission.CAMERA)) {
                 onCameraClick()
             }
+        }
+
+        binding.btOpenCamera.setOnClickListener {
+            latestTmpUri.let { uri ->
+                val action = HomeFragmentDirections.actionHomeFragmentToCalculateFragment(uri)
+                findNavController().navigate(action)
+            }
+
+
+
         }
     }
 
@@ -74,11 +83,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         }
     }
 
-
     private val takeImageResult = registerForActivityResult(ActivityResultContracts.TakePicture()) { isSuccess ->
         if(isSuccess) {
             latestTmpUri.let { uri ->
-                binding.btOpenCamera.visibility = View.GONE
                 binding.bgIv.setImageURI(uri)
             }
         }

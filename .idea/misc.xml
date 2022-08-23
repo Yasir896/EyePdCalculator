@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/drawable/button_background.xml" value="0.2265" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/drawable/textview_background.xml" value="0.2265" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/drawable/yellow_button_background.xml" value="0.2265" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_calculate_pd.xml" value="0.2" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_current_on_boarding.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_on_boarding_slider.xml" value="0.25416666666666665" />

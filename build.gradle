@@ -18,5 +18,5 @@ task clean(type: Delete) {
 }
 
 ext {
-    navVersion = '2.5.0'
+    navVersion = '2.5.1'
 }

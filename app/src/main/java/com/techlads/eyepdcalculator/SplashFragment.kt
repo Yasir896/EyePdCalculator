@@ -21,9 +21,8 @@ class SplashFragment: BaseFragment<FragmentSplashBinding>()  {
     }
 
     private fun goToNextScreen() {
-        object : CountDownTimer(3000, 100) {
+        object : CountDownTimer(1000, 100) {
             override fun onTick(p0: Long) { }
-
             override fun onFinish() {
                 navigateTo(R.id.action_splashFragment_to_onboardingFragment)
             }

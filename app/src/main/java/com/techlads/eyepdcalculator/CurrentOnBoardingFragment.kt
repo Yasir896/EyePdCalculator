@@ -6,26 +6,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import com.techlads.eyepdcalculator.base.BaseFragment
+import com.techlads.eyepdcalculator.databinding.FragmentCurrentOnBoardingBinding
+import com.techlads.eyepdcalculator.databinding.FragmentOnBoardingSliderBinding
 
 
 const val CURRENT_SLIDE_TEXT = "current_slide_text"
-class CurrentOnBoardingFragment : Fragment() {
+class CurrentOnBoardingFragment : BaseFragment<FragmentCurrentOnBoardingBinding>() {
 
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_current_on_boarding, container, false)
+    override fun getFragmentBinding(
+        inflater: LayoutInflater,
+        container: ViewGroup?
+    ): FragmentCurrentOnBoardingBinding {
+        return FragmentCurrentOnBoardingBinding.inflate(inflater, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onPostInit() {
         val text = arguments?.getString(CURRENT_SLIDE_TEXT)
 
         text.let {
-            view.findViewById<TextView>(R.id.guideLineText).text = it
+            binding.guideLineText.text = it
         }
-
     }
 }

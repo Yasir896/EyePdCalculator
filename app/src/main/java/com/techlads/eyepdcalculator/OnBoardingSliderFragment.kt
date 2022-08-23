@@ -1,16 +1,12 @@
 package com.techlads.eyepdcalculator
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.slider.Slider
 import com.techlads.eyepdcalculator.base.BaseFragment
 import com.techlads.eyepdcalculator.databinding.FragmentOnBoardingSliderBinding
-
 
 
 class OnBoardingSliderFragment : BaseFragment<FragmentOnBoardingSliderBinding>() {
