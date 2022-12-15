@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     tools:context=".SplashFragment">
 
-    <TextView
-        android:id="@+id/app_name_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/splashLogo"
         android:layout_gravity="center"
-        android:textSize="24sp"
-        android:text="@string/app_name_splash" />
-
+        android:src="@drawable/ic_eye_with_ruler"
+        android:elevation="10dp"
+        android:contentDescription="@string/app_name" />
 
 </FrameLayout>

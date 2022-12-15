@@ -4,6 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="click_picture">Click Picture</string>
     <string name="app_name_splash">Pupillary Distance Calculator</string>
+    <string name="result_dialog_title">Result</string>
+    <string name="close">Close</string>
 
 
     <string name="slide_one_info">We will take a Picture of your face using the front camera. and then going to measure pupillary Distance </string>

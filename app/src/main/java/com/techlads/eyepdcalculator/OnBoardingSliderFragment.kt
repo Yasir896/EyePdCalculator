@@ -34,7 +34,7 @@ class OnBoardingSliderFragment : BaseFragment<FragmentOnBoardingSliderBinding>()
                 if (position == 3) {
                     binding.btnNext.visibility = View.VISIBLE
                 } else {
-                    binding.btnNext.visibility = View.GONE
+                    binding.btnNext.visibility = View.INVISIBLE
                 }
             }
         }

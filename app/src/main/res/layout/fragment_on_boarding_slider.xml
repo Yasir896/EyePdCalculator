@@ -7,7 +7,7 @@
     tools:context=".OnBoardingSliderFragment">
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+        android:id  ="@+id/viewPager"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -15,25 +15,23 @@
         android:layout_width="0dp"
         android:layout_height="0dp"/>
 
-
     <Button
         android:id="@+id/btnNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/click_picture"
-        android:textColor="#FFFFFF"
-        android:layout_margin="16dp"
+        style="@style/primaryButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-        app:layout_constraintBottom_toTopOf="@id/indicator" />
-
-    <!--app:shapeAppearanceOverlay="@style/leaf"-->
     <me.relex.circleindicator.CircleIndicator3
         android:id="@+id/indicator"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="32dp"
+        android:layout_margin="16dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

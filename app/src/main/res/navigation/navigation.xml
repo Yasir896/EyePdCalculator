@@ -63,15 +63,21 @@
             android:name="imageUri"
             app:argType="android.net.Uri" />
 
+        <action
+            android:id="@+id/action_calculateFragment_to_resultDialog"
+            app:destination="@+id/resultDialog"
+
+            />
+
     </fragment>
 
-    <dialog
-        android:id="@+id/myDialog2"
-        android:name="com.techlads.eyepdcalculator.MyDialog"
-        android:label="MyDialog" >
+    <!--<dialog
+        android:id="@+id/resultDialog"
+        android:name="com.techlads.eyepdcalculator.ResultDialog"
+        android:label="Result Dialog" >
         <argument
             android:name="itemId"
             app:argType="string"
             android:defaultValue='""' />
-    </dialog>
+    </dialog>-->
 </navigation>

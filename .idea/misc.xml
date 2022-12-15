@@ -3,14 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/drawable/activity_background.xml" value="0.196" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/drawable/button_background.xml" value="0.2265" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/drawable/ic_eye_with_ruler.xml" value="0.196" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/drawable/textview_background.xml" value="0.2265" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/drawable/yellow_button_background.xml" value="0.2265" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/activity_background.xml" value="0.253125" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/dialog_pd_result_layout.xml" value="0.18984375" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_calculate_pd.xml" value="0.2" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_current_on_boarding.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_on_boarding_slider.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_on_boarding_slider.xml" value="0.1" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/fragment_splash.xml" value="0.25" />
+        <entry key="..\:/Android/EyePdCalculator/app/src/main/res/layout/my_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Android/EyePdCalculator/app/src/main/res/xml/provier_paths.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/Yasir/Desktop/Compose/EyePdCalculator/app/src/main/res/layout/activity_main.xml" value="0.17395833333333333" />
         <entry key="..\:/Users/Yasir/Desktop/Compose/EyePdCalculator/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />

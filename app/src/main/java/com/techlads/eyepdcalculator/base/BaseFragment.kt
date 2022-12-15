@@ -1,11 +1,14 @@
 package com.techlads.eyepdcalculator.base
 
+import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
+import com.techlads.eyepdcalculator.Constatns
+import com.techlads.eyepdcalculator.ResultDialog
 
 
 /**
@@ -34,5 +37,25 @@ abstract class BaseFragment<B: ViewBinding>: Fragment() {
     abstract fun getFragmentBinding(inflater: LayoutInflater, container: ViewGroup?): B
 
     abstract fun onPostInit()
+
+    fun showResultDialog(
+        result: Float
+    ) {
+        ResultDialog().apply {
+            arguments = Bundle().apply {
+                putString(Constatns.PD_RESULT, result.toString())
+            }
+            isCancelable = false
+
+            onCloseClickListener = object: ResultDialog.OnCloseClickListener {
+                override fun onClose(dialogFragment: Dialog?) {
+                    dismiss()
+                }
+
+            }
+
+
+        }.show(childFragmentManager, ResultDialog.TAG)
+    }
 
 }

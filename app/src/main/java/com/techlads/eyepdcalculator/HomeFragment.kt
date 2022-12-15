@@ -37,13 +37,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         }
 
         binding.btOpenCamera.setOnClickListener {
-            latestTmpUri.let { uri ->
+            if (this::latestTmpUri.isInitialized) {
+                latestTmpUri.let { uri ->
                 val action = HomeFragmentDirections.actionHomeFragmentToCalculateFragment(uri)
                 findNavController().navigate(action)
+                }
             }
-
-
-
         }
     }
 

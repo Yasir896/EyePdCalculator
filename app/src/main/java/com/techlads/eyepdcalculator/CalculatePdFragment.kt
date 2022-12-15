@@ -1,15 +1,12 @@
 package com.techlads.eyepdcalculator
 
 import android.annotation.SuppressLint
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.navigation.NavArgs
 import androidx.navigation.fragment.navArgs
 import com.techlads.eyepdcalculator.base.BaseFragment
 import com.techlads.eyepdcalculator.databinding.FragmentCalculatePdBinding
@@ -40,7 +37,6 @@ class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
             binding.bgIv.setImageURI(it)
         }
         setListeners()
-
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -76,9 +72,10 @@ class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
 
                 val pupillaryDistance = ((creditCardWidthMm / cardDistance) * pupilsDistance)
 
-                Toast.makeText(requireContext(),
-                    "distance: $pupillaryDistance",
-                    Toast.LENGTH_SHORT).show()
+
+                showResultDialog(pupillaryDistance)
+
+
             } else {
                 Toast.makeText(requireContext(),
                     "Something wrong! please make sure you followed all steps correctly.",
@@ -115,3 +112,5 @@ class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
         }
     }
 }
+
+
