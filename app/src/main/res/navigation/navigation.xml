@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_splash">
 
         <action
-            android:id="@+id/action_splashFragment_to_onboardingFragment"
+            android:id="@+id/action_splashFragment_to_onBoardingFragment"
             app:destination="@+id/OnBoardingFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
@@ -62,12 +62,6 @@
         <argument
             android:name="imageUri"
             app:argType="android.net.Uri" />
-
-        <action
-            android:id="@+id/action_calculateFragment_to_resultDialog"
-            app:destination="@+id/resultDialog"
-
-            />
 
     </fragment>
 

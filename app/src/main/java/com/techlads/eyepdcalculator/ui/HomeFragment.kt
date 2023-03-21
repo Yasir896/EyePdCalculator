@@ -41,7 +41,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             if (this::latestTmpUri.isInitialized) {
                 latestTmpUri.let { uri ->
                 val action =
-                    com.techlads.eyepdcalculator.HomeFragmentDirections.actionHomeFragmentToCalculateFragment(
+                    HomeFragmentDirections.actionHomeFragmentToCalculateFragment(
                         uri
                     )
                 findNavController().navigate(action)

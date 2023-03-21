@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         val navHostFragment = supportFragmentManager.
         findFragmentById(R.id.nav_host_fragment_container) as NavHostFragment
-        val navController = navHostFragment.navController
+        //val navController = navHostFragment.navController
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             window.statusBarColor = Color.WHITE

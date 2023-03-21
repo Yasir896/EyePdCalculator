@@ -27,7 +27,7 @@ class SplashFragment: BaseFragment<FragmentSplashBinding>()  {
 
             }
             override fun onFinish() {
-                navigateTo(R.id.action_splashFragment_to_onboardingFragment)
+                navigateTo(R.id.action_splashFragment_to_onBoardingFragment)
             }
 
         }.start()

@@ -16,7 +16,7 @@ import kotlin.math.sqrt
 
 class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
 
-    val  navArg: com.techlads.eyepdcalculator.CalculatePdFragmentArgs by navArgs()
+    val  navArg: CalculatePdFragmentArgs by navArgs()
 
     var markPupil = true;
 
@@ -33,8 +33,8 @@ class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
     }
 
     override fun onPostInit() {
-        navArg.imageUri.let { it
-            binding.bgIv.setImageURI(it)
+        navArg.imageUri.let { url ->
+            binding.bgIv.setImageURI(url)
         }
         setListeners()
     }
