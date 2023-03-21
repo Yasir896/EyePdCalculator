@@ -1,6 +1,5 @@
-package com.techlads.eyepdcalculator
+package com.techlads.eyepdcalculator.ui
 
-import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Build
@@ -8,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.fragment.NavHostFragment
+import com.techlads.eyepdcalculator.R
 import com.techlads.eyepdcalculator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

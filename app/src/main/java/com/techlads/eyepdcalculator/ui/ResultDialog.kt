@@ -1,4 +1,4 @@
-package com.techlads.eyepdcalculator
+package com.techlads.eyepdcalculator.ui
 
 
 import android.annotation.SuppressLint
@@ -9,9 +9,8 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
-import android.widget.Toast
 import androidx.fragment.app.DialogFragment
-import androidx.navigation.fragment.navArgs
+import com.techlads.eyepdcalculator.Constatns
 import com.techlads.eyepdcalculator.databinding.DialogPdResultLayoutBinding
 
 

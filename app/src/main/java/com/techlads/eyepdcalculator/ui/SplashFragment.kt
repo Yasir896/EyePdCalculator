@@ -1,9 +1,10 @@
-package com.techlads.eyepdcalculator
+package com.techlads.eyepdcalculator.ui
 
 import android.os.CountDownTimer
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.techlads.eyepdcalculator.R
 import com.techlads.eyepdcalculator.base.BaseFragment
 import com.techlads.eyepdcalculator.databinding.FragmentSplashBinding
 

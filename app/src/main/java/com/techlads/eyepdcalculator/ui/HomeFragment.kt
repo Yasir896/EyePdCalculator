@@ -1,4 +1,4 @@
-package com.techlads.eyepdcalculator
+package com.techlads.eyepdcalculator.ui
 
 import android.Manifest
 import android.content.Context
@@ -12,6 +12,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.techlads.eyepdcalculator.BuildConfig
 import com.techlads.eyepdcalculator.base.BaseFragment
 import com.techlads.eyepdcalculator.databinding.FragmentHomeBinding
 import java.io.File
@@ -39,7 +40,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         binding.btOpenCamera.setOnClickListener {
             if (this::latestTmpUri.isInitialized) {
                 latestTmpUri.let { uri ->
-                val action = HomeFragmentDirections.actionHomeFragmentToCalculateFragment(uri)
+                val action =
+                    com.techlads.eyepdcalculator.HomeFragmentDirections.actionHomeFragmentToCalculateFragment(
+                        uri
+                    )
                 findNavController().navigate(action)
                 }
             }

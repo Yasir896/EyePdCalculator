@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.techlads.eyepdcalculator.SplashFragment"
+        android:name="com.techlads.eyepdcalculator.ui.SplashFragment"
         android:label="Splash Fragment"
         tools:layout="@layout/fragment_splash">
 
@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/OnBoardingFragment"
-        android:name="com.techlads.eyepdcalculator.OnBoardingSliderFragment"
+        android:name="com.techlads.eyepdcalculator.ui.OnBoardingSliderFragment"
         android:label="On Boarding"
         tools:layout="@layout/fragment_on_boarding_slider">
 
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/HomeFragment"
-        android:name="com.techlads.eyepdcalculator.HomeFragment"
+        android:name="com.techlads.eyepdcalculator.ui.HomeFragment"
         android:label="Home Fragment"
         tools:layout="@layout/fragment_home">
 
@@ -55,7 +55,7 @@
 
     <fragment
         android:id="@+id/CalculateFragment"
-        android:name="com.techlads.eyepdcalculator.CalculatePdFragment"
+        android:name="com.techlads.eyepdcalculator.ui.CalculatePdFragment"
         android:label="Calculate PD"
         tools:layout="@layout/fragment_calculate_pd">
 
@@ -73,7 +73,7 @@
 
     <!--<dialog
         android:id="@+id/resultDialog"
-        android:name="com.techlads.eyepdcalculator.ResultDialog"
+        android:name="com.techlads.eyepdcalculator.ui.ResultDialog"
         android:label="Result Dialog" >
         <argument
             android:name="itemId"

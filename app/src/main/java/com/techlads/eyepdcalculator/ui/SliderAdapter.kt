@@ -1,9 +1,10 @@
-package com.techlads.eyepdcalculator
+package com.techlads.eyepdcalculator.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.techlads.eyepdcalculator.R
 
 class SliderAdapter(fa: FragmentActivity): FragmentStateAdapter(fa) {
 

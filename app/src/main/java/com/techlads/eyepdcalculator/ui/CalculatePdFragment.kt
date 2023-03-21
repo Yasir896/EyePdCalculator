@@ -1,4 +1,4 @@
-package com.techlads.eyepdcalculator
+package com.techlads.eyepdcalculator.ui
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -16,7 +16,7 @@ import kotlin.math.sqrt
 
 class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
 
-    val  navArg: CalculatePdFragmentArgs by navArgs()
+    val  navArg: com.techlads.eyepdcalculator.CalculatePdFragmentArgs by navArgs()
 
     var markPupil = true;
 

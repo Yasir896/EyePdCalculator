@@ -1,4 +1,4 @@
-package com.techlads.eyepdcalculator
+package com.techlads.eyepdcalculator.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
