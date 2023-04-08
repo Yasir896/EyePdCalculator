@@ -40,14 +40,12 @@ class ResultDialog: DialogFragment() {
                 window?.attributes?.gravity = Gravity.CENTER
                 window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             }
-
-
     }
 
     @SuppressLint("SetTextI18n")
     fun getDataFromArguments() {
         val result: String? = arguments?.getString(Constatns.PD_RESULT)
-        binding.resultTv.text = "Your Pupillary distance is: ${result}"
+        binding.resultTv.text = "Your Pupillary distance is: $result"
     }
 
     fun setListener() {
@@ -55,7 +53,6 @@ class ResultDialog: DialogFragment() {
             onCloseClickListener?.onClose(dialog)
         }
     }
-
 
     interface OnCloseClickListener {
         fun onClose(dialogFragment: Dialog?)
