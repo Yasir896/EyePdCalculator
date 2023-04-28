@@ -10,7 +10,7 @@ import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
-import com.techlads.eyepdcalculator.Constatns
+import com.techlads.eyepdcalculator.Constants
 import com.techlads.eyepdcalculator.databinding.DialogPdResultLayoutBinding
 
 
@@ -44,7 +44,7 @@ class ResultDialog: DialogFragment() {
 
     @SuppressLint("SetTextI18n")
     fun getDataFromArguments() {
-        val result: String? = arguments?.getString(Constatns.PD_RESULT)
+        val result: String? = arguments?.getString(Constants.PD_RESULT)
         binding.resultTv.text = "Your Pupillary distance is: $result"
     }
 

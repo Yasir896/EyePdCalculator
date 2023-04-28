@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
-import com.techlads.eyepdcalculator.Constatns
+import com.techlads.eyepdcalculator.Constants
 import com.techlads.eyepdcalculator.ui.ResultDialog
 
 
@@ -43,7 +43,7 @@ abstract class BaseFragment<B: ViewBinding>: Fragment() {
     ) {
         ResultDialog().apply {
             arguments = Bundle().apply {
-                putString(Constatns.PD_RESULT, result.toString())
+                putString(Constants.PD_RESULT, result.toString())
             }
             isCancelable = false
 
