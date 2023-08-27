@@ -16,7 +16,7 @@ import com.techlads.eyepdcalculator.ui.ResultDialog
  */
 
 
-abstract class BaseFragment<B: ViewBinding>: Fragment() {
+abstract class BaseFragment<B : ViewBinding> : Fragment() {
 
     protected lateinit var binding: B
 
@@ -47,15 +47,11 @@ abstract class BaseFragment<B: ViewBinding>: Fragment() {
             }
             isCancelable = false
 
-            onCloseClickListener = object: ResultDialog.OnCloseClickListener {
+            onCloseClickListener = object : ResultDialog.OnCloseClickListener {
                 override fun onClose(dialogFragment: Dialog?) {
                     dismiss()
                 }
-
             }
-
-
         }.show(childFragmentManager, ResultDialog.TAG)
     }
-
 }

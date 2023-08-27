@@ -16,11 +16,11 @@ import kotlin.math.sqrt
 
 class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
 
-    val  navArg: CalculatePdFragmentArgs by navArgs()
+    val navArg: CalculatePdFragmentArgs by navArgs()
 
     var markPupil = true;
 
-    val creditCardWidthMm : Float = 85.60f
+    val creditCardWidthMm: Float = 85.60f
     var pupilsDistance = 0f
     var cardDistance = 0f
 
@@ -52,34 +52,37 @@ class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
                 val marker1 = binding.markerPupilOne
                 val marker2 = binding.markerPupilTwo
 
-                pupilsDistance = sqrt(abs(
-                    (marker2.x - marker1.x) * (marker2.x - marker1.x) +
-                            (marker2.y - marker1.y) * (marker2.y - marker1.y)
-                ))
+                pupilsDistance = sqrt(
+                    abs(
+                        (marker2.x - marker1.x) * (marker2.x - marker1.x) +
+                                (marker2.y - marker1.y) * (marker2.y - marker1.y)
+                    )
+                )
 
                 changeMarkers()
                 markPupil = false
                 return@setOnClickListener
 
-            } else if (!markPupil ) {
+            } else if (!markPupil) {
                 val marker1 = binding.markerCardOne
                 val marker2 = binding.markerCardTwo
 
-                cardDistance = sqrt(abs(
-                    (marker2.x - marker1.x) * (marker2.x - marker1.x) +
-                            (marker2.y - marker1.y) * (marker2.y - marker1.y)
-                ))
+                cardDistance = sqrt(
+                    abs(
+                        (marker2.x - marker1.x) * (marker2.x - marker1.x) +
+                                (marker2.y - marker1.y) * (marker2.y - marker1.y)
+                    )
+                )
 
                 val pupillaryDistance = ((creditCardWidthMm / cardDistance) * pupilsDistance)
 
-
                 showResultDialog(pupillaryDistance)
-
-
             } else {
-                Toast.makeText(requireContext(),
+                Toast.makeText(
+                    requireContext(),
                     "Something wrong! please make sure you followed all steps correctly.",
-                    Toast.LENGTH_SHORT).show()
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }
@@ -87,7 +90,6 @@ class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
     private fun changeMarkers() {
         binding.markerPupilOne.hide()
         binding.markerPupilTwo.hide()
-
         binding.markerCardOne.show()
         binding.markerCardTwo.show()
     }
@@ -96,6 +98,7 @@ class CalculatePdFragment : BaseFragment<FragmentCalculatePdBinding>() {
     fun View.hide() {
         this.visibility = View.INVISIBLE
     }
+
     fun View.show() {
         this.visibility = View.VISIBLE
     }
