@@ -10,7 +10,7 @@ import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
 import androidx.fragment.app.DialogFragment
-import com.techlads.eyepdcalculator.Constants
+import com.techlads.eyepdcalculator.utils.Constants
 import com.techlads.eyepdcalculator.databinding.DialogPdResultLayoutBinding
 
 

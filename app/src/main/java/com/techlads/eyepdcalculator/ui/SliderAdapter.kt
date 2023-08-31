@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.techlads.eyepdcalculator.Constants.CURRENT_SLIDE_TEXT
+import com.techlads.eyepdcalculator.utils.Constants.CURRENT_SLIDE_TEXT
 import com.techlads.eyepdcalculator.R
 
 class SliderAdapter(fa: FragmentActivity): FragmentStateAdapter(fa) {

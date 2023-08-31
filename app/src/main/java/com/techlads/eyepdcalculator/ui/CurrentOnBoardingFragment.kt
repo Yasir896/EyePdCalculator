@@ -2,7 +2,7 @@ package com.techlads.eyepdcalculator.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.techlads.eyepdcalculator.Constants.CURRENT_SLIDE_TEXT
+import com.techlads.eyepdcalculator.utils.Constants.CURRENT_SLIDE_TEXT
 import com.techlads.eyepdcalculator.base.BaseFragment
 import com.techlads.eyepdcalculator.databinding.FragmentCurrentOnBoardingBinding
 

@@ -1,4 +1,4 @@
-package com.techlads.eyepdcalculator
+package com.techlads.eyepdcalculator.utils
 
 object Constants {
     const val PD_RESULT = "pd_result"
