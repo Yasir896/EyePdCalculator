@@ -1,6 +1,6 @@
-# EyePdCalculator
+# Eye PD Calculator
 
-This app is a simple tool to calculate the PD value that can be used when ordering glasses.
+This app is a simple tool to calculate the Pupillary Distance(PD) value that can be used when ordering glasses.
 
 ## How to Use
 
